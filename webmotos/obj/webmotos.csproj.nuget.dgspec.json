@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\ProyectosVerano2025\\webmotos\\webmotos.csproj": {}
+    "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\ProyectosVerano2025\\webmotos\\webmotos.csproj": {
+    "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\ProyectosVerano2025\\webmotos\\webmotos.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
         "projectName": "webmotos",
-        "projectPath": "C:\\Users\\Usuario\\ProyectosVerano2025\\webmotos\\webmotos.csproj",
+        "projectPath": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\ProyectosVerano2025\\webmotos\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
