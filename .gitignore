@@ -1,9 +1,10 @@
-# .NET
-bin/
-obj/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-project.lock.json
-project.fragment.lock.json
+# Archivos y directorios de .NET
+/webmotos/Debug/
+/webmotos/bin/
+/webmotos/obj/
+/webmotos/*.user
+/webmotos/*.suo
+/webmotos/*.userosscache
+/webmotos/*.sln.docstates
+/webmotos/project.lock.json
+/webmotos/project.fragment.lock.json
