@@ -1,11 +1,10 @@
 CREATE DATABASE webmotos;
-
+USE webmotos;
 CREATE TABLE Usuarios (
   id_usuario INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL UNIQUE,
   password VARCHAR(255) NOT NULL,
-  rol ENUM('admin', 'usuario') NOT NULL,
   creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -81,3 +80,6 @@ CREATE TABLE MotoAccesorios (
   FOREIGN KEY (id_moto) REFERENCES Motos(id_moto),
   FOREIGN KEY (id_accesorio) REFERENCES Accesorios(id_accesorio)
 );
+
+
+INSERT INTO usuarios (nombre,email,PASSWORD) VALUES('administrador','admin@gmail.com','21232f297a57a5a743894a0e4a801fc3');

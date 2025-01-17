@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Autenticación en el Sistema";
+    Layout = null;
+}
+<link href="~/css/login.css" rel="stylesheet" />
+
+<div class="form">
+    <h1>Login</h1>
+
+    <!-- Mostrar mensaje de error -->
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @using (Html.BeginForm("Acceder", "Login", FormMethod.Post))
+    {
+        <div class="control">
+            <label for="usuario">Correo:</label>
+            <input id="usuario" type="text" name="usuario" placeholder="Ingrese su correo" />
+        </div>
+        <div class="control">
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Ingrese su contraseña" />
+        </div>
+        <div class="control">
+            <button type="submit">Acceder</button>
+        </div>
+    }
+</div>

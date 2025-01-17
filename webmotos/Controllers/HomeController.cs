@@ -1,9 +1,10 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using webmotos.Filters;
 using webmotos.Models;
 
 namespace webmotos.Controllers;
-
+[Autenticado]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
