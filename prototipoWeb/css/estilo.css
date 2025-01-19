@@ -1,0 +1,245 @@
+
+.body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: #E1E3DB;
+}
+
+.estilos-container {
+padding: 20px;
+}
+
+.estilos-container h1 {
+font-size: 2em;
+color: #333;
+margin-bottom: 30px;
+}
+
+.grid-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.grid-item {
+text-align: center;
+width: 120px;
+}
+
+.grid-item img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.grid-item p {
+font-size: 14px;
+font-weight: bold;
+color: #555;
+}
+
+.ver-motos {
+display: inline-block;
+margin-top: 20px;
+color: #007bff;
+text-decoration: none;
+font-weight: bold;
+}
+
+.ver-motos:hover {
+text-decoration: underline;
+}
+
+
+para el carrusel 
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .carousel-slide p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  .carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+
+/* Area de publicidad promocioens  */
+
+  /* Estilos para el carrusel */
+  .carousel-track-container {
+    position: relative; /* Por si lo necesitas */
+    overflow: hidden;
+    width: 100%; /* Asegúrate de que tiene un ancho definido */
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform; /* Mejora la animación */
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%; /* Asegura que cada slide ocupe el 100% del contenedor */
+  }
+  
+.carousel-image {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
+/* Si deseas modificar el tamaño de la imagen, puedes hacerlo así */
+.carousel-image {
+  max-width: 800px; /* Ajusta el tamaño máximo de la imagen */
+  max-height: 600px; /* Ajusta la altura máxima de la imagen */
+  margin: 0 auto; /* Centra la imagen */
+}
+
+
+/* para la galeria de las motos que ofrecen  */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #161917;
+  color: #E1E3DB;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #9E0004;
+  color: #E1E3DB;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.btn-change-bg {
+  background-color: #B9030F;
+  color: #E1E3DB;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.section-title {
+  text-align: center;
+  color: #B9030F;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas con igual ancho */
+  gap: 10px; /* Espacio entre los elementos */
+  margin: 0 auto;
+  padding: 70px;
+  max-width: 1500px;  /* tamaño de las imagenes  */
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card__img {
+  width: 100%;
+  height: auto;
+}
+.card__title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.card__price {
+  color: #007bff;
+  font-weight: bold;
+}
+.card__whatsapp {
+  text-decoration: none;
+  color: white;
+  background-color: #25D366;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .items-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .items-container {
+      grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+  }
+}
