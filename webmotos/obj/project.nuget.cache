@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PQQVEE9Q0do=",
+  "dgSpecHash": "hxlLNcIgrdY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

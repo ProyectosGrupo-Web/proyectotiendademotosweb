@@ -2,12 +2,21 @@ using Microsoft.AspNetCore.Mvc;
 using webmotos.Filters;
 using webmotos.Models;
 using webmotos.Models.Security;
+using webmotos.Services;
 
-namespace moduloNotificaciones.Controllers
+namespace webmotos.Controllers
 {
     public class LoginController : Controller
     {
-        private Usuario usuario = new Usuario();
+        //private Usuario usuario = new Usuario();
+
+        private readonly UsuarioService _usuarioService;
+
+        public LoginController(UsuarioService usuarioService)
+        {
+            _usuarioService = usuarioService;
+        }
+        
         [NoLogin]
         public ActionResult Index()
         {
@@ -17,7 +26,7 @@ namespace moduloNotificaciones.Controllers
         {
             //usuario.testDB();
             // Llama al método Acceder y pasa HttpContext
-            var rm = await usuario.Acceder(HttpContext, Usuario, Password);
+            var rm = await _usuarioService.Acceder(HttpContext, Usuario, Password);
 
             if (rm.response) // Verifica si la respuesta fue exitosa
             {

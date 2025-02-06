@@ -2,22 +2,30 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using webmotos.Filters;
 using webmotos.Models;
+using webmotos.Services;
 
 namespace webmotos.Controllers;
 [Autenticado]
 public class HomeController : Controller
 {
+    private readonly HomeService _homeService;
+
+
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, HomeService homeService)
     {
         _logger = logger;
+        _homeService = homeService;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var home = _homeService.listarElementosHome();
+        return View(home);
     }
+
+    
 
     public IActionResult Privacy()
     {

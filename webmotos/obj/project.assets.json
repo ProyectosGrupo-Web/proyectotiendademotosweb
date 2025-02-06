@@ -6424,11 +6424,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
       "projectName": "webmotos",
-      "projectPath": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\ProyectosVerano2025\\proyectotiendademotosweb\\webmotos\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

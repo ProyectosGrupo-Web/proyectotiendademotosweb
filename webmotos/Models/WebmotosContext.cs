@@ -32,16 +32,50 @@ public partial class WebmotosContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
+    public virtual DbSet<Home> Home { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySql("server=localhost;port=3306;database=webmotos;user=root", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.28-mariadb"));
+    {
+        // Elimina esta línea
+        // => optionsBuilder.UseMySql("server=localhost;port=3306;database=webmotos;user=root", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.28-mariadb"));
+       
+    }
+
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseMySql("server=localhost;port=3306;database=webmotos;user=root", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.28-mariadb"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
             .UseCollation("utf8mb4_general_ci")
             .HasCharSet("utf8mb4");
+        modelBuilder.Entity<Home>(entity =>
+        {
+            entity.HasKey(e => e.IdContenido).HasName("PRIMARY");
+            entity.ToTable("home");
+            entity.Property(e => e.IdContenido)
+                .HasColumnType("int(11)")
+                .HasColumnName("id_contenido");
 
+            entity.Property(e => e.Nombre)
+                .HasMaxLength(255)
+                .HasColumnName("nombre");
+
+            entity.Property(e => e.UrlImagen)
+                .HasMaxLength(255)
+                .HasColumnName("url_imagen");
+
+            entity.Property(e => e.Descripcion)
+                .HasColumnType("text")
+                .HasColumnName("descripcion");
+
+            entity.Property(e => e.Prioridad)
+                .HasDefaultValue(1)
+                .HasColumnType("int(11)")
+                .HasColumnName("prioridad");
+
+        }
+        );
         modelBuilder.Entity<Accesorio>(entity =>
         {
             entity.HasKey(e => e.IdAccesorio).HasName("PRIMARY");
@@ -115,7 +149,8 @@ public partial class WebmotosContext : DbContext
                 .HasMaxLength(255)
                 .HasColumnName("url_foto");
 
-            entity.HasOne(d => d.IdMotoNavigation).WithMany(p => p.Fotos)
+            entity.HasOne(d => d.IdMotoNavigation)
+                .WithMany(p => p.Fotos)
                 .HasForeignKey(d => d.IdMoto)
                 .HasConstraintName("fotos_ibfk_1");
         });
@@ -215,6 +250,9 @@ public partial class WebmotosContext : DbContext
             entity.Property(e => e.Precio)
                 .HasPrecision(10, 2)
                 .HasColumnName("precio");
+            entity.Property(e => e.velocidadMax)
+                .HasColumnType("int(11)")
+                .HasColumnName("velocidadMax");
 
             entity.HasOne(d => d.IdModeloNavigation).WithMany(p => p.Motos)
                 .HasForeignKey(d => d.IdModelo)

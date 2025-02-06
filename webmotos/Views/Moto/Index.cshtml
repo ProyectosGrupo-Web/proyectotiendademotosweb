@@ -1,0 +1,139 @@
+﻿@model IEnumerable<webmotos.Models.Moto>
+@{
+    var tipos = ViewBag.Tipos as List<Tipo>;
+}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/todas.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo-container">
+                    <img src="~/images/logonegro2.png" alt="Motorcycle Logo" class="logo">
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a asp-controller="Home" asp-action="Index">Inicio</a>
+                <div class="dropdown">
+                    <a asp-controller="Motos" asp-action="Index" class="dropbtn">Motos</a>
+                    <div class="dropdown-content">
+                        <a asp-controller="Motos" asp-action="Index">Todas</a>
+                        <a asp-controller="Motos" asp-action="Deportivas">Deportivas-Pisteras</a>
+                        <a asp-controller="Motos" asp-action="Jch">Jch motos</a>
+                        <a asp-controller="Motos" asp-action="Bruno">Bruno motos</a>
+                    </div>
+                </div>
+                <a href="#accesorios">Accesorios</a>
+                <a href="#cotizacion">Cotización</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="navbar-right">
+                <a href="#lugar">Lugar</a>
+                <a href="#comparador">Comparador</a>
+            </div>
+            <div class="login-container">
+                <a href="#login" class="login">Login</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div>
+        <select id="tipoFiltro">
+            @if (tipos != null)
+            {
+                <option value="">Selecciona una opcion</option>
+                <option value="Todas">Todas</option>
+                @foreach (var tipo in tipos)
+                {
+                    <option value="@tipo.Tipo1">@tipo.Tipo1</option>
+                }
+            }
+        </select>
+    </div>
+    @* MOVER ESTE CODIGO A UN ARCHIVO DE JS *@
+    <script>
+        document.getElementById("tipoFiltro").addEventListener("change", function () {
+            var tipoSeleccionado = this.value;
+
+            // Redirige a la URL con el parámetro tipo en la ruta
+            if (tipoSeleccionado === "" || tipoSeleccionado === "Todas") {
+                window.location.href = '/Moto';  // Ruta para mostrar todas las motos
+            } else {
+                window.location.href = '/Moto/' + tipoSeleccionado;  // Ruta para mostrar motos filtradas
+            }
+        });
+
+    </script>
+
+    <section class="catalogo">
+        @foreach (var moto in Model)
+        {
+            <article class="moto">
+                <div class="imagen-moto">
+                    <img src="@(moto.Fotos.FirstOrDefault()?.UrlFoto)"
+                         alt="@moto.IdModeloNavigation?.NombreModelo">
+                    @* <img src="https://i.imgur.com/xpRFLfv.png"
+                alt="@moto.IdModeloNavigation?.NombreModelo"> *@
+
+                </div>
+                <div class="moto-info">
+                    <h2>@moto.IdModeloNavigation?.NombreModelo</h2>
+                    <div class="moto-detalles">
+                        <p>Motor: @moto.Cilindrada cc</p>
+                        <p>Potencia: @moto.Potencia HP</p>
+                        <p>Velocidad Máx: @moto.velocidadMax km/h</p>
+                    </div>
+                    <p class="moto-precio">S/ @moto.Precio</p>
+                    <button class="btn-comprar">Ver Detalles</button>
+                    <a href="https://wa.me/1234567890?text=Me%20interesa%20la%20moto%20@moto.IdModeloNavigation?.NombreModelo" class="whatsapp-float" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </article>
+        }
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Teléfono: 983 504 654</p>
+                <p>Correo: Alex.tello995@gmail.com</p>
+                <p>Dirección: Av. la Cultura 23004, Tacna 23004</p>
+                <iframe src="https://www.google.com/maps/embed?..." width="100" height="225" style="border:0; border-radius: 10px; margin-top: 1rem;" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="footer-section">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#moto-sales">🏍️ Motos en Venta</a></li>
+                    <li><a href="#moto-catalog">📑 Catálogo de Motos</a></li>
+                    <li><a href="#finance-options">💳 Opciones de Financiamiento</a></li>
+                    <li><a href="#contact-us">📞 Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Conéctate con Nosotros</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/983504654"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MOTOSSUR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -14,4 +14,26 @@ public partial class Marca
     public DateTime CreadoEn { get; set; }
 
     public virtual ICollection<Modelo> Modelos { get; set; } = new List<Modelo>();
+
+    // CRUD MARCAS
+
+    // METODOS
+    public List<Marca> listarMarcas()
+    {
+        var query = new List<Marca>();
+        try
+        {
+            using (var db = new WebmotosContext())
+            {
+                // Lista todo
+                //query = db.Eventos.ToList();
+                //Lista por estado activo
+                //query = db.Marcas.Where(d => d.Estado == "1").ToList();
+                query = db.Marcas.ToList();
+            }
+        }
+        catch (Exception) { throw; }
+        return query;
+    }
+
 }

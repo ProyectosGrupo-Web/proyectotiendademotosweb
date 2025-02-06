@@ -22,4 +22,20 @@ public partial class Modelo
     public virtual Tipo IdTipoNavigation { get; set; } = null!;
 
     public virtual ICollection<Moto> Motos { get; set; } = new List<Moto>();
+
+    // Metodos
+
+    public List<Modelo> listarModelos()
+    {
+        var query = new List<Modelo>();
+        try
+        {
+            using (var db = new WebmotosContext())
+            {
+                query = db.Modelos.ToList();
+            }
+        }
+        catch (Exception) { throw; }
+        return query;
+    }
 }

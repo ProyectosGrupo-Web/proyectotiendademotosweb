@@ -1,0 +1,29 @@
+﻿@model IEnumerable<webmotos.Models.Marca>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Lista de Marcas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>País de Origen</th>
+            <th>Fecha de Creación</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var marca in Model)
+        {
+            <tr>
+                <td>@marca.IdMarca</td>
+                <td>@marca.NombreMarca</td>
+                <td>@marca.PaisOrigen</td>
+                <td>@marca.CreadoEn.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

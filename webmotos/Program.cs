@@ -1,10 +1,16 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using webmotos.Models;
+using webmotos.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<MotoService>();
+builder.Services.AddScoped<TipoService>();
+builder.Services.AddScoped<HomeService>();
 
 
 
@@ -23,10 +29,19 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         /* options.ExpireTimeSpan = TimeSpan.FromMinutes(5); */
     });
 
-builder.Services.AddDbContext<WebmotosContext>(opt =>
-    opt.UseMySql(builder.Configuration.GetConnectionString("webmotosDB"),
-    ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("webmotosDB"))));
-    
+//builder.Services.AddDbContext<WebmotosContext>(opt =>
+//    opt.UseMySql(builder.Configuration.GetConnectionString("webmotosDB"),
+//    ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("webmotosDB"))));
+
+
+
+
+builder.Services.AddDbContext<WebmotosContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("webmotosDB"),
+    Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("webmotosDB"))));
+
+
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthorization();
 
@@ -51,5 +66,14 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Login}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "filtrarMotos",
+    pattern: "Moto/{tipo}",
+    defaults: new { controller = "Moto", action = "FiltrarPorTipo" });
+
+//app.MapControllerRoute(
+//    name: "mostrarTodasMotos",
+//    pattern: "Moto",
+//    defaults: new { controller = "Moto", action = "Index" }); 
 
 app.Run();

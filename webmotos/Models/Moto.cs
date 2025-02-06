@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.DataProtection.XmlEncryption;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 
 namespace webmotos.Models;
@@ -16,6 +18,7 @@ public partial class Moto
     public int? Cilindrada { get; set; }
 
     public int? Potencia { get; set; }
+    public int? velocidadMax { get; set; }
 
     public string? Descripcion { get; set; }
 
@@ -28,4 +31,13 @@ public partial class Moto
     public virtual Modelo? IdModeloNavigation { get; set; }
 
     public virtual ICollection<Accesorio> IdAccesorios { get; set; } = new List<Accesorio>();
+
+    
+
+
+
+
+
+
+
 }
