@@ -1,0 +1,73 @@
+﻿@model IEnumerable<webmotos.Models.Moto>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var tipos = ViewBag.Tipos as List<Tipo>;
+}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+    <link href="~/css/todas.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div>
+        <select id="tipoFiltro">
+            @if (tipos != null)
+            {
+                <option value="">Selecciona una opcion</option>
+                <option value="Todas">Todas</option>
+                @foreach (var tipo in tipos)
+                {
+                    <option value="@tipo.Tipo1">@tipo.Tipo1</option>
+                }
+            }
+        </select>
+    </div>
+    @* MOVER ESTE CODIGO A UN ARCHIVO DE JS *@
+    <script>
+        document.getElementById("tipoFiltro").addEventListener("change", function () {
+            var tipoSeleccionado = this.value;
+
+            // Redirige a la URL con el parámetro tipo en la ruta
+            if (tipoSeleccionado === "" || tipoSeleccionado === "Todas") {
+                window.location.href = '/Moto';  // Ruta para mostrar todas las motos
+                
+            } else {
+                window.location.href = '/Moto/' + tipoSeleccionado;  // Ruta para mostrar motos filtradas
+            }
+        });
+
+    </script>
+
+    <section class="catalogo">
+        @foreach (var moto in Model)
+        {
+            <article class="moto">
+                <div class="imagen-moto">
+                    <img src="@(moto.Fotos.FirstOrDefault()?.UrlFoto)"
+                         alt="@moto.IdModeloNavigation?.NombreModelo">
+                </div>
+                <div class="moto-info">
+                    <h2>@moto.IdModeloNavigation?.NombreModelo</h2>
+                    <div class="moto-detalles">
+                        <p>Motor: @moto.Cilindrada cc</p>
+                        <p>Potencia: @moto.Potencia HP</p>
+                        <p>Velocidad Máx: @moto.velocidadMax km/h</p>
+                    </div>
+                    <p class="moto-precio">S/ @moto.Precio</p>
+                    <button class="btn-comprar">Ver Detalles</button>
+                    <a href="https://wa.me/1234567890?text=Me%20interesa%20la%20moto%20@moto.IdModeloNavigation?.NombreModelo" class="whatsapp-float" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </article>
+        }
+    </section>
+</body>
+</html>

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @* <title>@ViewData["Title"] - webmotos</title> *@
+    <title>MOTOS</title>
+    
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="~/css/todas.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Sección Izquierda: Logo -->
+            <div class="navbar-left">
+                <div class="logo-container">
+                    <img src="@Url.Content("~/img/logonegro2.png")" alt="Motorcycle Logo" class="logo">
+                </div>
+            </div>
+            <!-- Sección Central: Enlaces principales -->
+            <div class="navbar-center">
+                <a href="index.html">Inicio</a>
+
+                <div class="dropdown">
+                
+                    <a href="Todas.html" class="dropbtn">Motos</a>
+                <div class="dropdown-content">
+                    <a href="@Url.Action("Todas", "Moto")" class="dropbtn">Motos</a>
+                    <a href="@Url.Action("Todas", "Moto")">Todas</a>
+                    <a href="@Url.Action("DeportivasPisteras", "Moto")">Deportivas-Pisteras</a>
+                    <a href="@Url.Action("JchMotos", "Moto")">Jch motos</a>
+                    <a href="@Url.Action("BrunoMotos", "Moto")">Bruno motos</a>
+                </div>
+
+                </div>
+                <a href="accesorios.html">Accesorios</a>
+                <a href="cotizacion.html">Cotización</a>
+
+            </div>
+
+            <!-- Sección Derecha: Lugar y Comparador -->
+            <div class="navbar-right">
+                <a href="lugar.html ">Lugar</a>
+                <a href="comparador.html">Comparador</a>
+            </div>
+
+            <!-- Login en la Esquina Derecha -->
+            <div class="login-container">
+                <a href="#login" class="login">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Pie de página -->
+    <footer style="background-color: #333; color: white; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; padding: 0 20px;">
+            <!-- Columna 1: Sobre nosotros -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                <h4>Sobre Nosotros</h4>
+                <p>Teléfono: 983 504 654</p>
+                <p>Correo: <a href="mailto:Alex.tello995@gmail.com" style="color: white;">Alex.tello995@gmail.com</a></p>
+                <p>Dirección: <a href="https://maps.app.goo.gl/g4BBFCE193gVLi8o8" target="_blank" style="color: white;">Av. la Cultura 23004, Tacna 23004</a></p>
+                <p>Mapa:</p>
+                <a href="https://maps.app.goo.gl/g4BBFCE193gVLi8o8" target="_blank">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.6244025798196!2d-70.25857762402957!3d-18.042626482323904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf71b68c94b3%3A0xeec9acaeb42642fa!2sMotos%20sur%20tacna!5e0!3m2!1ses-419!2spe!4v1737257509372!5m2!1ses-419!2spe"
+                            width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </a>
+            </div>
+            <!-- Columna 2: Servicios -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                <h4>Servicios</h4>
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="@Url.Content("~/img/logonegro2.png")" alt="Motorcycle Logo" width="150" height="auto">
+                </div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px;">
+                        <a href="#moto-sales" style="color: white; display: flex; align-items: center; transition: transform 0.3s;">
+                            <span style="margin-right: 10px;">🏍️</span> Motos en Venta
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="#moto-catalog" style="color: white; display: flex; align-items: center; transition: transform 0.3s;">
+                            <span style="margin-right: 10px;">📑</span> Catálogo de Motos
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="#finance-options" style="color: white; display: flex; align-items: center; transition: transform 0.3s;">
+                            <span style="margin-right: 10px;">💳</span> Opciones de Financiamiento
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="#contact-us" style="color: white; display: flex; align-items: center; transition: transform 0.3s;">
+                            <span style="margin-right: 10px;">📞</span> Contáctanos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Columna 3: Redes Sociales -->
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: center;">
+                <h4>Conectate con Nosotros</h4>
+                <div style="margin-top: 10px; display: flex; justify-content: center; gap: 15px;">
+                    <a href="https://facebook.com" style="color: white; font-size: 30px;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" style="color: white; font-size: 30px;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com" style="color: white; font-size: 30px;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://wa.me/+1234567890" style="color: white; font-size: 30px;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; padding: 10px 0; border-top: 1px solid #555;">
+            <a asp-controller="Page" asp-action="Terminos" style="color: white; margin: 0 15px;">Términos y condiciones</a>
+            <a asp-controller="Page" asp-action="Privacidad" style="color: white; margin: 0 15px;">Política de privacidad</a>
+            <a asp-controller="Page" asp-action="Cookies" style="color: white; margin: 0 15px;">Política de cookies</a>
+        </div>
+        <!-- Derechos reservados -->
+        <p style="text-align: center; font-size: 12px; background-color: #222; margin: 0; padding: 10px;">
+            © 2025 MiEmpresa. Todos los derechos reservados.
+        </p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    </body>
+
+
+</html>

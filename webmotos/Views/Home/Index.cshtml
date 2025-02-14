@@ -1,0 +1,39 @@
+﻿@model IEnumerable<webmotos.Models.Home>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div>
+    <h2>CONTENIDO DEL HOME</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>idContenido</th>
+                <th>Nombre</th>
+                <th>url imagen</th>
+                <th>descripcion</th>
+                <th>prioridad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var home in Model)
+            {
+                <tr>
+                    <td>@home.IdContenido</td>
+                    <td>@home.Nombre</td>
+                    <td>@home.UrlImagen</td>
+                    <td>@home.Descripcion</td>
+                    <td>@home.Prioridad</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+nm
