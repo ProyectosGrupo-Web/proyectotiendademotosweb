@@ -1,0 +1,131 @@
+/* Estilos generales */
+
+
+/* Contenedor de la política de cookies */
+.cookies-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    text-align: left;
+    color: #000; /* Asegura que el texto sea negro */
+}
+
+
+/* Encabezados */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Lista de cookies */
+ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+    ul li {
+        font-size: 16px;
+        margin: 10px 0;
+        padding-left: 20px;
+        position: relative;
+    }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0000;
+            font-size: 18px;
+        }
+
+/* Botón animado */
+.btn-regresar {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+    .btn-regresar:hover {
+        background-color: #ccc;
+        color: #000;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cookies-container {
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, ul li {
+        font-size: 14px;
+    }
+
+    .btn-regresar {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookies-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p, ul li {
+        font-size: 12px;
+    }
+
+    .btn-regresar {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
+
