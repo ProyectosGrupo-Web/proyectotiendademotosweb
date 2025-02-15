@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q++mEKWN2wMvDJ4SwG9FiaGWO7eFG2YWvq9021jkudI=",
+  "Hash": "82/kwuJxBQjgcVGPW9CMdKuxWQQ+BsmG7A+R0I3NVaw=",
   "Source": "webmotos",
   "BasePath": "_content/webmotos",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\legal.css"
+    },
+    {
+      "Identity": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\lugar.css",
+      "SourceId": "webmotos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\",
+      "BasePath": "_content/webmotos",
+      "RelativePath": "css/lugar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\lugar.css"
     },
     {
       "Identity": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\site.css",

@@ -3,48 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\moto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\moto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\todas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:wwwroot\\css\\todas.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\legal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:wwwroot\\css\\legal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\page\\terminos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\page\\terminos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\page\\privacidad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\page\\privacidad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\page\\cookies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\page\\cookies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\views\\moto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:views\\moto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\controllers\\motocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|c:\\users\\jose\\desktop\\motossss\\proyectotiendademotosweb\\webmotos\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E48932B3-F290-4D10-8FD3-7A928349FDDA}|webmotos.csproj|solutionrelative:controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,96 +62,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Privacidad.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Page\\Privacidad.cshtml",
-              "RelativeDocumentMoniker": "Views\\Page\\Privacidad.cshtml",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Page\\Privacidad.cshtml",
-              "RelativeToolTip": "Views\\Page\\Privacidad.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T01:03:27.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Terminos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Page\\Terminos.cshtml",
-              "RelativeDocumentMoniker": "Views\\Page\\Terminos.cshtml",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Page\\Terminos.cshtml",
-              "RelativeToolTip": "Views\\Page\\Terminos.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T01:02:57.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "script.js",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\js\\script.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\script.js",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\js\\script.js",
-              "RelativeToolTip": "wwwroot\\js\\script.js",
-              "ViewState": "AgIAADEAAAAAAAAAAAAiwJ4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-11T18:25:59.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T02:29:59.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "legal.css",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\legal.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\legal.css",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\legal.css",
-              "RelativeToolTip": "wwwroot\\css\\legal.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-10T01:43:37.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "todas.css",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\todas.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\todas.css",
               "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\todas.css",
               "RelativeToolTip": "wwwroot\\css\\todas.css",
-              "ViewState": "AgIAAHEBAAAAAAAAAAAIwJoBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAANEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-08T01:36:19.028Z"
+              "WhenOpened": "2025-02-08T01:36:19.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Moto\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Moto\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Moto\\Index.cshtml",
               "RelativeToolTip": "Views\\Moto\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T02:03:16.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T02:03:16.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -171,31 +103,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Cookies.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Page\\Cookies.cshtml",
               "RelativeDocumentMoniker": "Views\\Page\\Cookies.cshtml",
               "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Page\\Cookies.cshtml",
               "RelativeToolTip": "Views\\Page\\Cookies.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T01:03:49.051Z"
+              "WhenOpened": "2025-02-08T01:03:49.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAJAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T17:10:06.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\js\\script.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\script.js",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\js\\script.js",
+              "RelativeToolTip": "wwwroot\\js\\script.js",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-11T18:25:59.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T02:29:59.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageController.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\PageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PageController.cs",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\PageController.cs",
+              "RelativeToolTip": "Controllers\\PageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T01:01:41.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T01:50:37.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Login\\Index.cshtml",
               "RelativeToolTip": "Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-10T02:18:32.418Z"
+              "WhenOpened": "2025-02-10T02:18:32.418Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -207,19 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T17:10:06.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "MotoController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\MotoController.cs",
               "RelativeDocumentMoniker": "Controllers\\MotoController.cs",
@@ -231,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -240,18 +225,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T02:29:58.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PageController.cs",
-              "DocumentMoniker": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\PageController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PageController.cs",
-              "ToolTip": "C:\\Users\\Jose\\Desktop\\Motossss\\proyectotiendademotosweb\\webmotos\\Controllers\\PageController.cs",
-              "RelativeToolTip": "Controllers\\PageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T01:01:41.324Z"
             }
           ]
         }

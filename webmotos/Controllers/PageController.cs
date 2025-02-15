@@ -18,5 +18,9 @@ namespace webmotos.Controllers
         {
             return View();
         }
+        public IActionResult Lugar()
+        {
+            return View();
+        }
     }
 }

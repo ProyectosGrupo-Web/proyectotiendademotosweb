@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//CARRUSEL DE IMAGENES DEL HOME PRINCIPAL  
-
 
 
 

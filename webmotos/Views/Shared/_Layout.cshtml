@@ -16,7 +16,8 @@
 
 </head>
 <body>
-    <header>
+    <main>
+      <header>
         <nav class="navbar">
             <!-- Sección Izquierda: Logo -->
             <div class="navbar-left">
@@ -47,7 +48,7 @@
 
             <!-- Sección Derecha: Lugar y Comparador -->
             <div class="navbar-right">
-                <a href="lugar.html ">Lugar</a>
+                <a asp-controller="Page" asp-action="Lugar" style="color: white; margin: 0 15px;">Lugar</a>
                 <a href="comparador.html">Comparador</a>
             </div>
 
@@ -56,15 +57,15 @@
                 <a href="#login" class="login">Login</a>
             </div>
         </nav>
-    </header>
-    <div class="container">
+      </header>
+      <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+      </div>
 
-    <!-- Pie de página -->
-    <footer style="background-color: #333; color: white; padding: 20px 0;">
+      <!-- Pie de página -->
+      <footer style="background-color: #333; color: white; padding: 20px 0;">
         <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; padding: 0 20px;">
             <!-- Columna 1: Sobre nosotros -->
             <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
@@ -135,12 +136,15 @@
         <p style="text-align: center; font-size: 12px; background-color: #222; margin: 0; padding: 10px;">
             © 2025 MiEmpresa. Todos los derechos reservados.
         </p>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-    </body>
+       </footer>
+       <script src="~/lib/jquery/dist/jquery.min.js"></script>
+       <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="~/js/site.js" asp-append-version="true"></script>
+      @await RenderSectionAsync("Scripts", required: false)
+
+    </main>
+
+</body>
 
 
 </html>
