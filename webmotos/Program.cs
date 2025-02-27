@@ -1,16 +1,26 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using webmotos.Models;
+using webmotos.Models.Security;
 using webmotos.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Fluent validation registro
+
+
+builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
+
 
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<MotoService>();
 builder.Services.AddScoped<TipoService>();
+builder.Services.AddScoped<ModelosService>();
+builder.Services.AddScoped<MarcasService>();
 builder.Services.AddScoped<HomeService>();
+builder.Services.AddScoped<FotoService>();
+builder.Services.AddScoped<CookieHelper>();
 
 
 

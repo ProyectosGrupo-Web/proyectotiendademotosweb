@@ -492,3 +492,6 @@ C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\obj\Debug\net8.0
 C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\obj\Debug\net8.0\webmotos.pdb
 C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\obj\Debug\net8.0\webmotos.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\obj\Debug\net8.0\ref\webmotos.dll
+C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\obj\Debug\net8.0\scopedcss\Views\Shared\_Dashboard.cshtml.rz.scp.css
+C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

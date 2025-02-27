@@ -16,36 +16,32 @@ namespace webmotos.Services
 
 
         //METODOS
+        // Logica de negocio
 
-        
-        //public List<Moto> filtrarPorTipo(string tipo)
-        //{
-        //    var query = new List<Moto>();
-        //    try
-        //    {
-        //        query = _context.Motos
-        //        .Include(m => m.IdModeloNavigation)
-        //        .ThenInclude(mod => mod.IdTipoNavigation)
-        //        .Where(m => m.IdModeloNavigation.IdTipoNavigation.Tipo1 == tipo)
-        //        .ToList();
-        //    }
-        //    catch { 
-        //    }
-        //    return query;
-            
-        //}
-        
+        public List<Moto> ListarMotos()
+        {
+            try
+            {
+                return _context.Motos
+                    .Include(m => m.IdModeloNavigation)
+                    .AsNoTracking() // Abre la conexion en modo lectura
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en ListarMotos: {ex.Message}");
+                throw;
+            }
+        }
 
         public List<Moto> FiltrarMotosPorTipo(string tipo)
         {
             var query = new List<Moto>();
-            Console.WriteLine("SE FILTRARA POR :::: "+tipo);
             try
             {
                 if (tipo != "")
                 {
                     var idtipo = _context.Tipos.Where(t => t.Tipo1 == tipo).FirstOrDefault();
-                    Console.WriteLine("IDTIPO:"+idtipo.IdTipo);
                     query = _context.Motos
                                 .Include(m => m.IdModeloNavigation)
                                 .Include(m => m.Fotos)
@@ -59,12 +55,6 @@ namespace webmotos.Services
                                 .Include(m => m.Fotos)
                                 .ToList();
                 }
-                
-                foreach(var item in query)
-                {
-                    Console.WriteLine($"TIPO : {item.IdModeloNavigation.IdTipoNavigation.Tipo1}");
-
-                }
             }
             catch (Exception)
             {
@@ -73,21 +63,42 @@ namespace webmotos.Services
             return query;
         }
 
-
-        public List<Moto> listarMotos()
+        public Moto detalleMoto(int id)
         {
-            var query = new List<Moto>();
             try
             {
-
-                using (var db = new WebmotosContext())
-                {
-                    query = db.Motos.ToList();
-                }
+                var moto = _context.Motos
+                    .Where(x => x.IdMoto == id)
+                    .Include(m => m.IdModeloNavigation)
+                    .Include(m => m.Fotos)
+                    .FirstOrDefault(); // Obtiene solo un objeto o null
+                return moto;
             }
-            catch (Exception) { throw; }
-            return query;
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERROR: " + ex.ToString());
+                throw;
+            }
         }
+
+
+
+
+        // CRUD
+        //public List<Moto> listarMotos()
+        //{
+        //    var query = new List<Moto>();
+        //    try
+        //    {
+
+        //        using (var db = new WebmotosContext())
+        //        {
+        //            query = db.Motos.ToList();
+        //        }
+        //    }
+        //    catch (Exception) { throw; }
+        //    return query;
+        //}
 
         //public List<Moto> listarMotosConFotos()
         //{
@@ -109,7 +120,28 @@ namespace webmotos.Services
         //}
 
 
+        // TESTEANDO NUEVO METODO PARA VIEWMODEL
 
+        public Moto CrearMoto(MotoModeloViewModel viewModel, int idModelo)
+        {
+            viewModel.Disponible = true;
+            var moto = new Moto
+            {
+                IdModelo = idModelo, // Asociar el modelo creado
+                Precio = viewModel.Precio,
+                Color = viewModel.Color,
+                Cilindrada = viewModel.Cilindrada,
+                Potencia = viewModel.Potencia,
+                velocidadMax = viewModel.VelocidadMax,
+                Descripcion = viewModel.Descripcion,
+                Disponible = viewModel.Disponible,
+                CreadoEn = DateTime.Now
+            };
+
+            _context.Motos.Add(moto);
+            _context.SaveChanges();
+            return moto;
+        }
 
     }
 }

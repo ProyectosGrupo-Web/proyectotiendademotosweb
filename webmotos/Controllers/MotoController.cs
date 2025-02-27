@@ -53,21 +53,40 @@ namespace webmotos.Controllers
             return View("Index", motos);
         }
 
-        [HttpGet("Moto/{tipo}")]
-        public ActionResult FiltrarPorTipo(string tipo)
+        [HttpGet("Moto/{tipo?}")] // El ? hace que "tipo" sea opcional
+        public IActionResult FiltrarPorTipo(string tipo)
         {
             var tipos = _tipoService.ObtenerTipos();
-            ViewBag.Tipos = _tipoService.ObtenerTipos();
+            ViewBag.Tipos = tipos;
 
-            if (string.IsNullOrEmpty(tipo))
+            if (string.IsNullOrEmpty(tipo) || tipo == "Todas")
             {
-                return RedirectToAction("Index"); // Si no hay filtro, se muestran todas
+                return RedirectToAction("Index"); // Si no hay tipo, redirige a todas las motos
             }
 
             var motosFiltradas = _motoService.FiltrarMotosPorTipo(tipo);
 
-            return PartialView("Index", motosFiltradas); // Se usa una vista parcial
+            return View("Index", motosFiltradas); // Devuelve la vista principal con los datos
         }
+
+
+        // ACTION FUNCIONAL PARA FILTRO::::
+        //[HttpGet("Moto/{tipo}")]
+        //public ActionResult FiltrarPorTipo(string tipo)
+        //{
+        //    var tipos = _tipoService.ObtenerTipos();
+        //    ViewBag.Tipos = tipos;
+        //    //ViewBag.Tipos = _tipoService.ObtenerTipos();
+
+        //    if (string.IsNullOrEmpty(tipo))
+        //    {
+        //        return RedirectToAction("Index"); // Si no hay filtro, se muestran todas
+        //    }
+
+        //    var motosFiltradas = _motoService.FiltrarMotosPorTipo(tipo);
+
+        //    return PartialView("Index", motosFiltradas); // Se usa una vista parcial
+        //}
 
 
         //// Acciones para Marcas
