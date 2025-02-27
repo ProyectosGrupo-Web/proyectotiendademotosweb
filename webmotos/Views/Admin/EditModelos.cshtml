@@ -1,0 +1,66 @@
+﻿@model webmotos.Models.Modelo
+@{
+    var tipos = ViewBag.Tipos as List<Tipo>;
+    var marcas = ViewBag.Marcas as List<Marca>;
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Editar Modelo</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5>Editar Modelo</h5>
+
+            @using (Html.BeginForm("EditModelos", "Admin", FormMethod.Post))
+            {
+                <!-- Campo oculto para el ID del Modelo -->
+                <input type="hidden" name="IdModelo" value="@Model.IdModelo" />
+
+                <div class="mb-3">
+                    @Html.LabelFor(m => m.NombreModelo, new { @class = "form-label" })
+                    @Html.TextBoxFor(m => m.NombreModelo, new { @class = "form-control", required = "required" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.Label("Anio", "Año", new { @class = "form-label" })
+                    <select class="form-select" id="Anio" name="Anio" required>
+                        <option value="">Selecciona un año</option>
+                        @for (int i = DateTime.Now.Year; i >= 2000; i--)
+                        {
+                            <option value="@i" selected="@(Model.Anio == i ? "selected" : null)">@i</option>
+
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    @Html.Label("IdTipo", "Tipo", new { @class = "form-label" })
+                    <select id="IdTipo" name="IdTipo" class="form-select" required>
+                        <option value="">Elegir Tipo</option>
+                        @foreach (var tipo in ViewBag.Tipos)
+                        {
+                            <option value="@tipo.IdTipo" selected="@(Model.IdTipo == tipo.IdTipo ? "selected" : null)">@tipo.Tipo1</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    @Html.Label("IdMarca", "Marca", new { @class = "form-label" })
+                    <select id="IdMarca" name="IdMarca" class="form-select" required>
+                        <option value="">Elegir Marca</option>
+                        @foreach (var marca in ViewBag.Marcas)
+                        {
+                            <option value="@marca.IdMarca" selected="@(Model.IdMarca == marca.IdMarca ? "selected" : null)">@marca.NombreMarca</option>
+                        }
+                    </select>
+                </div>
+
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-success">Actualizar</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

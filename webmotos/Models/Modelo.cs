@@ -19,7 +19,7 @@ public partial class Modelo
 
     public virtual Marca? IdMarcaNavigation { get; set; }
 
-    public virtual Tipo IdTipoNavigation { get; set; } = null!;
+    public virtual Tipo? IdTipoNavigation { get; set; } = null!;
 
     public virtual ICollection<Moto> Motos { get; set; } = new List<Moto>();
 

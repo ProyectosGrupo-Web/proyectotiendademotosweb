@@ -21,21 +21,21 @@
                     <img src="~/images/logonegro2.png" alt="Motorcycle Logo" class="logo">
                 </div>
             </div>
+
             <div class="navbar-center">
                 <a asp-controller="Home" asp-action="Index">Inicio</a>
+
+                <!-- Dropdown de Motos -->
                 <div class="dropdown">
-                    <a asp-controller="Motos" asp-action="Index" class="dropbtn">Motos</a>
-                    <div class="dropdown-content">
-                        <a asp-controller="Motos" asp-action="Index">Todas</a>
-                        <a asp-controller="Motos" asp-action="Deportivas">Deportivas-Pisteras</a>
-                        <a asp-controller="Motos" asp-action="Jch">Jch motos</a>
-                        <a asp-controller="Motos" asp-action="Bruno">Bruno motos</a>
-                    </div>
+                    <a href="#" class="dropbtn">Motos</a> 
+                    @await Component.InvokeAsync("Tipos")
+                <!-- FIN -->
                 </div>
                 <a href="#accesorios">Accesorios</a>
                 <a href="#cotizacion">Cotización</a>
                 <a href="#contacto">Contacto</a>
             </div>
+
             <div class="navbar-right">
                 <a href="#lugar">Lugar</a>
                 <a href="#comparador">Comparador</a>
@@ -60,6 +60,7 @@
             }
         </select>
     </div>
+
     @* MOVER ESTE CODIGO A UN ARCHIVO DE JS *@
     <script>
         document.getElementById("tipoFiltro").addEventListener("change", function () {
@@ -94,7 +95,15 @@
                         <p>Velocidad Máx: @moto.velocidadMax km/h</p>
                     </div>
                     <p class="moto-precio">S/ @moto.Precio</p>
-                    <button class="btn-comprar">Ver Detalles</button>
+                    @* <button class="btn-comprar">Ver Detalles</button> *@
+                    @*  *@
+
+                    <a href="@Url.Action("DetalleMoto", "Moto", new { id = moto.IdModelo })" class="btn btn-primary btn-sm">Ver Detalles</a>
+
+                    <button class="btn-comprar" onclick="window.location.href='@Url.Action("DetalleMoto", "Moto", new { id = moto.IdModelo })'">
+                        Ver Detalles
+                    </button>
+
                     <a href="https://wa.me/1234567890?text=Me%20interesa%20la%20moto%20@moto.IdModeloNavigation?.NombreModelo" class="whatsapp-float" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
@@ -135,5 +144,22 @@
             <p>© 2025 MOTOSSUR. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("tipoFiltro").addEventListener("change", function () {
+                var tipoSeleccionado = this.value;
+
+                // Redirigir a la nueva URL limpia
+                if (tipoSeleccionado === "" || tipoSeleccionado === "Todas") {
+                    window.location.href = '/Moto';  // Muestra todas las motos
+                } else {
+                    window.location.href = '/Moto/' + encodeURIComponent(tipoSeleccionado);
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
+

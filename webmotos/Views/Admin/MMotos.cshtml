@@ -1,0 +1,99 @@
+﻿@model MotoModeloViewModel
+@{
+    var tipos = ViewBag.Tipos as List<Tipo>;
+    var marcas = ViewBag.Marcas as List<Marca>;
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Registrar Moto y Modelo</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            @using (Html.BeginForm("MMotos", "Admin", FormMethod.Post))
+            {
+                <div id="validationErrors" class="alert alert-danger d-none"></div> <!-- Mensajes de error -->
+                <!-- Campos del Modelo -->
+                <h3>Datos del Modelo</h3>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.NombreModelo, new { @class = "form-control", placeholder = "Nombre del modelo", required = "required" })
+                    @Html.Label("NombreModelo", "Nombre del modelo")
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" id="Anio" name="Anio" required>
+                        <option value="">Selecciona un año</option>
+                        @for (int i = DateTime.Now.Year; i >= 2000; i--)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+
+                <!-- Select para Tipos -->
+                <div class="mb-3">
+                    <select id="Tipos" name="IdTipo" class="form-select" required>
+                        <option value="">Elegir Tipo</option>
+                        @foreach (var tipo in tipos)
+                        {
+                            <option value="@tipo.IdTipo">@tipo.Tipo1</option>
+                        }
+                    </select>
+                </div>
+
+                <!-- Select para Marcas -->
+                <div class="mb-3">
+                    <select id="Marcas" name="IdMarca" class="form-select" required>
+                        <option value="">Elegir Marca</option>
+                        @foreach (var marca in marcas)
+                        {
+                            <option value="@marca.IdMarca">@marca.NombreMarca</option>
+                        }
+                    </select>
+                </div>
+
+                <!-- Campos de la Moto -->
+                <h3>Datos de la Moto</h3>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Precio, new { @class = "form-control", placeholder = "Precio", required = "required" })
+                    @Html.Label("Precio", "Precio")
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Color, new { @class = "form-control", placeholder = "Color" })
+                    @Html.Label("Color", "Color")
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Cilindrada, new { @class = "form-control", placeholder = "Cilindrada" })
+                    @Html.Label("Cilindrada", "Cilindrada")
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Potencia, new { @class = "form-control", placeholder = "Potencia" })
+                    @Html.Label("Potencia", "Potencia")
+                </div>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.Descripcion, new { @class = "form-control", placeholder = "Descripcion" })
+                    @Html.Label("Descripcion", "Descripcion")
+                </div>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.VelocidadMax, new { @class = "form-control", placeholder = "Velocidad" })
+                    @Html.Label("VelocidadMax", "Velocidad")
+                </div>
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.UrlFoto, new { @class = "form-control", placeholder = "Ingresar URL imagen [Temporal]" })
+                    @Html.Label("UrlFoto", "Imagen")
+                </div>
+
+
+
+                <!-- Botón de Registro -->
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-success" id="btnRegistrar">Registrar Moto y Modelo</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

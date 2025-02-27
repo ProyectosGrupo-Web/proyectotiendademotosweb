@@ -31,13 +31,4 @@ public partial class Moto
     public virtual Modelo? IdModeloNavigation { get; set; }
 
     public virtual ICollection<Accesorio> IdAccesorios { get; set; } = new List<Accesorio>();
-
-    
-
-
-
-
-
-
-
 }

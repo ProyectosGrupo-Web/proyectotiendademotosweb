@@ -8,7 +8,6 @@ namespace webmotos.Controllers
 {
     public class LoginController : Controller
     {
-        //private Usuario usuario = new Usuario();
 
         private readonly UsuarioService _usuarioService;
 
@@ -30,7 +29,7 @@ namespace webmotos.Controllers
 
             if (rm.response) // Verifica si la respuesta fue exitosa
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Admin");
             }
 
             TempData["ErrorMessage"] = "Credenciales incorrectas. Por favor, intente nuevamente.";

@@ -1,0 +1,171 @@
+﻿@model IEnumerable<webmotos.Models.Modelo>
+@{
+    var tipos = ViewBag.Tipos as List<Tipo>;
+    var marcas = ViewBag.Marcas as List<Marca>;
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Modelos</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            @using (Html.BeginForm("registrarModelos", "Admin", FormMethod.Post))
+            {
+
+                // Estructura de un textBox
+                @* @Html.TextBox("name", "valor", new { atributos })*@
+
+                <div class="form-floating mb-3">
+                    @Html.TextBox("NombreModelo", null, new { @class = "form-control", placeholder = "Nombre del modelo", required = "required" })
+                    @Html.Label("NombreModelo", "Nombre del modelo")
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" id="Anio" name="Anio" required>
+                        <option value="">Selecciona un año</option>
+                        @for (int i = DateTime.Now.Year; i >= 2000; i--)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+
+                @* Select para Tipos *@
+                <div class="mb-3">
+                    <select id="Tipos" name="IdTipo" class="form-select" required>
+                        <option value="">Elegir Tipo</option>
+                        @foreach (var tipo in ViewBag.Tipos)
+                        {
+                            <option value="@tipo.IdTipo">@tipo.Tipo1</option>
+                        }
+                    </select>
+                </div>
+
+                @* Select para Marcas *@
+                <div class="mb-3">
+                    <select id="Marcas" name="IdMarca" class="form-select" required>
+                        <option value="">Elegir Marca</option>
+                        @foreach (var marca in ViewBag.Marcas)
+                        {
+                            <option value="@marca.IdMarca">@marca.NombreMarca</option>
+                        }
+                    </select>
+                </div>
+
+
+
+                @*<div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-success">Registrar</button>
+            </div>*@
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-success" id="btnRegistrar">Registrar</button>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <!-- Tabla de eventos existentes -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5>Modelos registrados</h5>
+            <table class="table table-striped table-bordered">
+                <colgroup>
+                    <col style="width: 18%;"> <!-- Ancho de la columna "Nombre" -->
+                    <col style="width: 8%;"> <!-- Ancho de la columna "Nombre" -->
+                    <col style="width: 17%;"> <!-- Ancho de la columna "Nombre" -->
+                    <col style="width: 15%;"> <!-- Ancho de la columna "Nombre" -->
+                    <col style="width: 15%;"> <!-- Ancho de la columna "Nombre" -->
+                    <col style="width: 18%;"> <!-- Ancho de la columna "Nombre" -->
+                </colgroup>
+                <thead class="table-dark">
+                    <tr>
+
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@Html.DisplayFor(m => item.NombreModelo)</td>
+                            <td>@Html.DisplayFor(m => item.Anio)</td>
+                            <td>@Html.DisplayFor(m => item.IdTipoNavigation.Tipo1)</td>
+                            <td>@Html.DisplayFor(m => item.IdMarcaNavigation.NombreMarca)</td>
+                            <td>@Html.DisplayFor(m => item.CreadoEn)</td>
+                            <td class="text-center">
+                                <!-- Enlace para Editar -->
+                                @Html.ActionLink("Editar", "EditModelos", "Admin", new { id = item.IdModelo }, new { @class = "btn btn-primary btn-sm" })
+                                @* @Html.ActionLink("Eliminar", "EliminarTipo", "Admin", new { id = item.IdTipo}, new { @class = "btn btn-danger btn-sm", onclick = "return confirm('¿Estás seguro que quieres eliminar?');" }) *@
+                                <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="@item.IdModelo">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar Eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Esta seguro de eliminar el registro?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <a href="#" id="deleteConfirmBtn" class="btn btn-danger">Eliminar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @* script para eliminar *@
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var confirmDeleteModal = document.getElementById("confirmDeleteModal");
+            var deleteConfirmBtn = document.getElementById("deleteConfirmBtn");
+
+            confirmDeleteModal.addEventListener("show.bs.modal", function (event) {
+                var button = event.relatedTarget; // Botón que activó el modal
+                var id = button.getAttribute("data-id"); // Obtener el ID
+
+                // console.log("ID capturado:", id); // Verifica en consola si se captura bien
+
+                if (id) {
+                    deleteConfirmBtn.href = "/Admin/EliminarModelos/" + id;
+                } else {
+                    console.error("❌ Error: No se obtuvo un ID válido.");
+                }
+            });
+        });
+    </script>
+
+    @* SCRIPT para DESACTIVAR REGISTRO luego del PRIMER CLICK *@
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const btn = document.getElementById("btnRegistrar");
+
+            form.addEventListener("submit", function () {
+                btn.disabled = true;
+                btn.innerText = "Registrando..."; // Opcional: cambiar texto del botón
+            });
+        });
+    </script>
+</div>
+

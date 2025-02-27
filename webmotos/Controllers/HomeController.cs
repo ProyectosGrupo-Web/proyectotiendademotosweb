@@ -5,7 +5,7 @@ using webmotos.Models;
 using webmotos.Services;
 
 namespace webmotos.Controllers;
-[Autenticado]
+
 public class HomeController : Controller
 {
     private readonly HomeService _homeService;

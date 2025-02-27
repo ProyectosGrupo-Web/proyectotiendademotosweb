@@ -1,0 +1,9 @@
+﻿@model List<webmotos.Models.Tipo>
+
+<div class="dropdown-content">
+    <a asp-controller="Moto" asp-action="Index">Todas</a>
+    @foreach (var tipo in Model)
+    {
+        <a asp-controller="Moto" asp-action="FiltrarPorTipo" asp-route-tipo="@tipo.Tipo1">@tipo.Tipo1</a>
+    }
+</div>

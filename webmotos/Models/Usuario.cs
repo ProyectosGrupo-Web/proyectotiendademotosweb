@@ -16,7 +16,4 @@ public partial class Usuario
     public string Password { get; set; } = null!;
 
     public DateTime CreadoEn { get; set; }
-
-
-    
 }

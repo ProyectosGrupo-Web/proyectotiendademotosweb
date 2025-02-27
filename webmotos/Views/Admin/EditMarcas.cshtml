@@ -1,0 +1,32 @@
+﻿@model webmotos.Models.Marca
+@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Editar Ruta</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5>Editar Ruta</h5>
+            @using (Html.BeginForm("EditMarcas", "Admin", FormMethod.Post))
+            {
+
+                <input type="hidden" name="IdMarca" value="@Model.IdMarca" />
+
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.NombreMarca, new { @class = "form-control", required = "required" })
+                    @Html.LabelFor(m => m.NombreMarca,"Nombre de la marca", new { @class = "form-label" })
+                </div>
+                <div class="form-floating mb-3">
+                    @Html.TextBoxFor(m => m.PaisOrigen, new { @class = "form-control", required = "required" })
+                    @Html.LabelFor(m => m.PaisOrigen, "Pais", new { @class = "form-label" })
+                </div>
+                <div class="text-end">
+                    <button type="submit" class="btn btn-success">Actualizar</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
