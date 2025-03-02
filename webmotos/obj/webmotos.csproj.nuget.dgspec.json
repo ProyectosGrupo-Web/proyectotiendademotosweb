@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj": {}
+    "C:\\Users\\Jose\\Desktop\\Final\\proyectotiendademotosweb\\webmotos\\webmotos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj": {
+    "C:\\Users\\Jose\\Desktop\\Final\\proyectotiendademotosweb\\webmotos\\webmotos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
+        "projectUniqueName": "C:\\Users\\Jose\\Desktop\\Final\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
         "projectName": "webmotos",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\proyectotiendademotosweb\\webmotos\\obj\\",
+        "projectPath": "C:\\Users\\Jose\\Desktop\\Final\\proyectotiendademotosweb\\webmotos\\webmotos.csproj",
+        "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jose\\Desktop\\Final\\proyectotiendademotosweb\\webmotos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +63,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.7, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -90,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -80,48 +80,6 @@ namespace webmotos.Services
                 throw;
             }
         }
-
-
-
-
-        // CRUD
-        //public List<Moto> listarMotos()
-        //{
-        //    var query = new List<Moto>();
-        //    try
-        //    {
-
-        //        using (var db = new WebmotosContext())
-        //        {
-        //            query = db.Motos.ToList();
-        //        }
-        //    }
-        //    catch (Exception) { throw; }
-        //    return query;
-        //}
-
-        //public List<Moto> listarMotosConFotos()
-        //{
-        //    var query = new List<Moto>(); // Inicializar la lista vacía
-        //    try
-        //    {
-        //        // Usamos el contexto inyectado (sin crear una nueva instancia)
-        //        query = _context.Motos
-        //                      .Include(m => m.IdModeloNavigation)
-        //                      .Include(m => m.Fotos)
-        //                      .ToList();
-
-        //        var sqlQuery = _context.Motos.ToQueryString();
-        //        Console.WriteLine($"SQL Generado: {sqlQuery}");
-        //    }
-        //    catch (Exception) { throw; }
-
-        //    return query; // Devuelve una lista vacía en caso de error
-        //}
-
-
-        // TESTEANDO NUEVO METODO PARA VIEWMODEL
-
         public Moto CrearMoto(MotoModeloViewModel viewModel, int idModelo)
         {
             viewModel.Disponible = true;

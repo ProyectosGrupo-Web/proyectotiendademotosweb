@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webmotos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45e6b429399d56b9414823e41651af6f03bc596b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9c3e4073b3b88cce5dc134c161d899ddf08b07c")]
 [assembly: System.Reflection.AssemblyProductAttribute("webmotos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webmotos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

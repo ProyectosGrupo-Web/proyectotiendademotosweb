@@ -1,0 +1,134 @@
+﻿@model webmotos.Models.Moto
+@{
+    ViewData["Title"] = "DetalleMoto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.IdModeloNavigation?.NombreModelo</title>
+    <link href="~/css/detalles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="model-number">@Model.IdModeloNavigation?.NombreModelo</h1>
+            <p>@Model.Descripcion</p>
+            <div class="price">USD $ @Model.Precio</div>
+            <a href="#" class="cta-button">HACER CONSULTA</a>
+        </div>
+    </div>
+
+    <!-- Quick Specs Overview -->
+    <div class="specs-overview">
+        <div class="spec-overview-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <div class="spec-value">@Model.Cilindrada</div>
+            <div class="spec-label">CC</div>
+        </div>
+        <div class="spec-overview-item">
+            <i class="fas fa-gas-pump"></i>
+            <div class="spec-value">130</div>
+            <div class="spec-label">KM/GAL</div>
+        </div>
+        <div class="spec-overview-item">
+            <i class="fas fa-weight"></i>
+            <div class="spec-value">108</div>
+            <div class="spec-label">KG</div>
+        </div>
+    </div>
+
+    <!-- Detailed Specifications Section -->
+    <div class="specs-container">
+        <div class="sidebar">
+            <div class="sidebar-item active" data-section="destacados">
+                <div class="icon-container">
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>Destacados</span>
+            </div>
+            <div class="sidebar-item" data-section="motor">
+                <div class="icon-container">
+                    <i class="fas fa-engine"></i>
+                </div>
+                <span>Motor y Sistema</span>
+            </div>
+            <div class="sidebar-item" data-section="frenos">
+                <div class="icon-container">
+                    <i class="fas fa-brake-system"></i>
+                </div>
+                <span>Frenos</span>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="header">
+                <h1>ESPECIFICACIONES</h1>
+                <div class="action-buttons">
+                    <button class="btn">AÑADIR A COMPARADOR</button>
+                    <button class="btn">FICHA TÉCNICA (PDF)</button>
+                </div>
+            </div>
+
+            <div class="spec-section active" id="destacados">
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <h3>MOTOR VARILLERO</h3>
+                        <p>Una gran herramienta de trabajo gracias a su motor varillero que prioriza el torque sobre la potencia y vigoriza su desempeño para llevar peso.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>LLANTA TRASERA CON MÁS COCADA</h3>
+                        <p>Con dos fines principales: traccionar mejor y aumentar la estabilidad en conducción.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>COMPACTA</h3>
+                        <p>Tiene un tamaño mediano para transitar por las zonas más inesperadas que el camino depare.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>TABLERO</h3>
+                        <p>
+                            • Analógico<br>
+                            • Velocímetro<br>
+                            • Tacómetro<br>
+                            • Indicador de marcha engranada
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spec-section" id="motor">
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <h3>MOTOR</h3>
+                        <p>Motor de @Model.Cilindrada cc con tecnología avanzada para un rendimiento óptimo.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>SISTEMA DE ENFRIAMIENTO</h3>
+                        <p>Sistema de enfriamiento por aire para mantener la temperatura ideal del motor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spec-section" id="frenos">
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <h3>FRENOS DELANTEROS</h3>
+                        <p>Frenos de disco delanteros para una frenada segura y eficiente.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>FRENOS TRASEROS</h3>
+                        <p>Frenos de tambor traseros para un control adicional en terrenos difíciles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>

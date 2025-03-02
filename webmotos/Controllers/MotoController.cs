@@ -7,22 +7,17 @@ namespace webmotos.Controllers
 {
     public class MotoController : Controller
     {
-        //private Marca objMarca = new Marca();
-        //private Tipo objTipo = new Tipo();
-        //private Modelo objModelo = new Modelo();
-
-        //private Moto objMotos = new Moto();
-
-        // Instancia del servicio
-        private readonly TipoService _tipoService;
         private readonly MotoService _motoService;
-        // Constructor del controlador donde solo se inyecta Moto
+        private readonly TipoService _tipoService;
+
+        // Constructor donde se inyectan los servicios
         public MotoController(MotoService motoService, TipoService tipoService)
         {
             _motoService = motoService;
             _tipoService = tipoService;
         }
 
+        // Método para mostrar todas las motos
         [HttpGet("Moto")]
         public ActionResult Index()
         {
@@ -41,7 +36,6 @@ namespace webmotos.Controllers
                 Console.WriteLine("ObtenerTipos() devolvió NULL");
             }
 
-            //var motos = _motoService.listarMotosConFotos();
             var motos = _motoService.FiltrarMotosPorTipo("");
 
             // Debug: Verifica si las fotos están cargadas
@@ -53,7 +47,8 @@ namespace webmotos.Controllers
             return View("Index", motos);
         }
 
-        [HttpGet("Moto/{tipo?}")] // El ? hace que "tipo" sea opcional
+        // Método para filtrar motos por tipo
+        [HttpGet("Moto/{tipo?}")] // "?" hace que el parámetro sea opcional
         public IActionResult FiltrarPorTipo(string tipo)
         {
             var tipos = _tipoService.ObtenerTipos();
@@ -61,83 +56,25 @@ namespace webmotos.Controllers
 
             if (string.IsNullOrEmpty(tipo) || tipo == "Todas")
             {
-                return RedirectToAction("Index"); // Si no hay tipo, redirige a todas las motos
+                return RedirectToAction("Index"); // Si no hay filtro, muestra todas
             }
 
             var motosFiltradas = _motoService.FiltrarMotosPorTipo(tipo);
-
-            return View("Index", motosFiltradas); // Devuelve la vista principal con los datos
+            return View("Index", motosFiltradas);
         }
 
+        // Método para mostrar los detalles de una moto
+        [HttpGet("Moto/Detalle/{id}")]
+        public ActionResult Detalle(int id)
+        {
+            var moto = _motoService.detalleMoto(id);
 
-        // ACTION FUNCIONAL PARA FILTRO::::
-        //[HttpGet("Moto/{tipo}")]
-        //public ActionResult FiltrarPorTipo(string tipo)
-        //{
-        //    var tipos = _tipoService.ObtenerTipos();
-        //    ViewBag.Tipos = tipos;
-        //    //ViewBag.Tipos = _tipoService.ObtenerTipos();
+            if (moto == null)
+            {
+                return NotFound("Moto no encontrada");
+            }
 
-        //    if (string.IsNullOrEmpty(tipo))
-        //    {
-        //        return RedirectToAction("Index"); // Si no hay filtro, se muestran todas
-        //    }
-
-        //    var motosFiltradas = _motoService.FiltrarMotosPorTipo(tipo);
-
-        //    return PartialView("Index", motosFiltradas); // Se usa una vista parcial
-        //}
-
-
-        //// Acciones para Marcas
-        //public ActionResult mostrarMarcas()
-        //{
-        //    return View(objMarca.listarMarcas());
-        //}
-        //// Acciones para Tipos
-        //public ActionResult mostrarTipos()
-        //{
-        //    return View(objTipo.listarTipos());
-        //}
-
-        //// Acciones para Modelos
-        //public ActionResult mostrarModelos()
-        //{
-        //    return View(objModelo.listarModelos());
-        //}
-
-        // Acciones para Motos
-
-        //[HttpGet("Moto")]
-        //public ActionResult mostrarMotos()
-        //{
-        //    var tipos = _tipoService.ObtenerTipos();
-        //    ViewBag.Tipos = _tipoService.ObtenerTipos();
-
-        //    if (tipos != null)
-        //    {
-        //        foreach (var tipo in tipos)
-        //        {
-        //            Console.WriteLine($"Tipo: {tipo.Tipo1}");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("ObtenerTipos() devolvió NULL");
-        //    }
-        //    //
-        //    var motos = _motoService.listarMotosConFotos();
-
-        //    // Debug: Verifica si las fotos están cargadas
-        //    foreach (var moto in motos)
-        //    {
-        //        Console.WriteLine($"Moto: {moto.IdMoto}, Fotos: {string.Join(", ", moto.Fotos.Select(f => f.UrlFoto))}");
-        //    }
-
-        //    return View(motos);
-        //}
-
-
-
+            return View("DetalleMoto", moto);
+        }
     }
 }

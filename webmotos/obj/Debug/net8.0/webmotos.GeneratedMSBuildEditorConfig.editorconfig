@@ -17,103 +17,119 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webmotos
 build_property.RootNamespace = webmotos
-build_property.ProjectDir = C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos\
+build_property.ProjectDir = C:\Users\Jose\Desktop\Final\proyectotiendademotosweb\webmotos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Usuario\source\repos\proyectotiendademotosweb\webmotos
+build_property.MSBuildProjectDirectory = C:\Users\Jose\Desktop\Final\proyectotiendademotosweb\webmotos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/CompletarMoto.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/CompletarMoto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tcGxldGFyTW90by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/EditMarcas.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/EditMarcas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdE1hcmNhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/EditModelos.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/EditModelos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdE1vZGVsb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/EditTipo.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/EditTipo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFRpcG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/Index.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/Marcas.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/Marcas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFyY2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/MMotos.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/MMotos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTU1vdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/Modelos.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/Modelos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW9kZWxvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/Motos.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/Motos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW90b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Admin/Tipos.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Admin/Tipos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGlwb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Home/Index.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Home/Privacy.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Login/Index.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Moto/Index.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Moto/DetalleMoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b1xEZXRhbGxlTW90by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Moto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Moto/mostrarMarcas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b1xtb3N0cmFyTWFyY2FzLmNzaHRtbA==
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Page/Cookies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDb29raWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Shared/Components/Tipos/Default.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Page/Lugar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxMdWdhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Page/Privacidad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxQcml2YWNpZGFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Page/Terminos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxUZXJtaW5vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Shared/Components/Tipos/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGlwb3NcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Shared/Components/UserInfo/Default.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Shared/Components/UserInfo/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlckluZm9cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Shared/Error.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/_ViewImports.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/_ViewStart.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Shared/_Dashboard.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Shared/_Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zsaz2k04zh
 
-[C:/Users/Usuario/source/repos/proyectotiendademotosweb/webmotos/Views/Shared/_Layout.cshtml]
+[C:/Users/Jose/Desktop/Final/proyectotiendademotosweb/webmotos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0wrbjjt9un

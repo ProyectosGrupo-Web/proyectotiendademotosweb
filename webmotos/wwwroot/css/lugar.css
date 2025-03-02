@@ -1,0 +1,58 @@
+/* Contenedor principal centrado */
+.map-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título y dirección */
+.map-header h1 {
+    font-size: 34px; /* Aumenta el tamaño */
+    color: #b30000; /* Rojo oscuro */
+    text-shadow: 2px 2px 5px rgba(179, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.map-header p {
+    font-size: 22px; /* Aumenta el tamaño */
+    color: white; /* Blanco */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Contenedor del mapa */
+.map-container {
+    width: 95%;
+    max-width: 1000px; /* Tamaño del mapa */
+    padding: 10px;
+}
+
+    .map-container iframe {
+        width: 100%;
+        height: 500px; /* Mapa más grande */
+        border-radius: 10px;
+    }
+
+/* Botón de enlace */
+.map-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 18px 30px;
+    background: #b30000; /* Rojo oscuro */
+    color: white; /* Blanco */
+    font-size: 22px; /* Aumenta el tamaño */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+    .map-link:hover {
+        background: #ff0000; /* Rojo más brillante */
+        transform: translateY(-3px);
+    }
